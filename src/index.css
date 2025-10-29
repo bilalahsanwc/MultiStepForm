@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main-image {
+    height: 35vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.design-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.design-div h3 {
+    font-weight: 700;
+    font-size: 2.25em;
+    color: hsl(234, 29%, 20%);
+}
+
+.main-para {
+    width: 85vw;
+    word-wrap: break-word;
+    font-size: 1rem;
+    line-height: 1.15;
+    color: hsl(235, 18%, 26%);
+}
+
+.text-content {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 65vh;
+    gap: 24px;
+}
+
+.uses {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.uses div {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.uses div img {
+    margin-bottom: auto;
+    height: 2.5vh;
+}
+
+.uses div p {
+    font-size: 1rem;
+    line-height: 1.25;
+    color: hsl(234, 29%, 20%);
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+form input {
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 90%;
+    height: 7vh;
+    border: 1px solid hsl(0, 0%, 58%);
+    padding-left: 30px;
+    margin-top: 1.5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+form input::placeholder {
+    color: hsl(0, 0%, 58%);
+    font-weight: 400;
+}
+
+form button {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    width: 90%;
+    height: 7vh;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.success-div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-content {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.success-content-c1 {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.success-content-c1 h3 {
+    font-size: 3em;
+    line-height: 1.2;
+    border: none;
+    color: hsl(234, 29%, 20%);
+}
+
+.confirmation-para {
+    width: 90vw;
+    word-wrap: break-word;
+    line-height: 1.3;
+    font-size: 1.25rem;
+}
+
+.email {
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.tick-img {
+    height: 7.5vh;
+}
+
+.success-div button {
+    width: 100%;
+    color: white;
+    background: hsl(234, 29%, 20%);
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 2.25vh;
+    padding-bottom: 2.25vh;
+    font-size: 1.25rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+}
+
+
+@media (min-width: 1024px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: hsl(235, 18%, 26%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .design-div {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        width: 70vw;
+        height: 100vh;
+        background-color: white;
+    }
+
+    .main-image {
+        height: 95vh;
+        padding-right: 1.5vw;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .text-content {
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+        /* width: 50vw; */
+    }
+
+    .text-content h3 {
+        font-size: 4em;
+    }
+
+    .main-para {
+        width: 25vw;
+        word-wrap: break-word;
+    }
+
+    .uses div {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+    }
+
+    form input {
+        padding-right: 32px;
+    }
+
+    form input:hover {
+        padding-right: 32px;
+        border: 1px solid black;
+    }
+
+    form button {
+
+        padding-right: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: hsl(4, 100%, 67%);
+        cursor: pointer;
+    }
+
+}
